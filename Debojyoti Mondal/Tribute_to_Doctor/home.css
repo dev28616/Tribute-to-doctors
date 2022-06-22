@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    position: relative;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  nav {
+    background: #fe9a99;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items:center ;
+    padding-right: 60px;
+  }
+  .logo {
+    flex: 1;
+    margin-left: 0px;
+  }
+  
+  .logo h1 {
+    letter-spacing: 2px;
+    font-size: 30px;
+  }
+  
+  .list-items {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .list {
+    list-style: none;
+    font-size: 20px;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.4s background;
+  }
+  
+  .link:hover {
+    color: #ba4c4a;
+  }
+  
+  .main {
+    background: #fff;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .main-left {
+    height: 100%;
+    width: 50%;
+  }
+  .main-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .img-v {
+    height: 25vw;
+    width: 25vw;
+    animation: rotation 10s infinite linear;
+
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotateX(180deg);
+    }
+    to {
+      transform: rotateY(-180deg)
+    }
+  }
+
+
+  .img-w{
+
+  position: relative;    
+
+
+  }
+  
+  .main-right p {
+    font-size: 30px;
+    padding-top: 20px;
+  }
+  
+  .text {
+    margin-left: -49%;
+    padding-top: 20%;
+    
+  }
+  
+  .text span {
+    font-size: 5vw;
+    letter-spacing: 25px;
+    font-weight: bold;
+    color: #fe9a99;
+    text-shadow: 7px 5px 5px rgb(52, 49, 49);
+  }
+  
+  .text p {
+    padding-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-left: auto;
+    
+  }
+  .right-bar {
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  
+  .icons {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .icon-btn {
+    margin-top: 20px;
+    background: white;
+    text-decoration: none;
+    color: grey;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: relative;
+  }
+  
+  .icon-btn i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .search {
+    position: absolute;
+    color: white;
+    top: 25px;
+    font-size: 20px;
+  }
+
+  h1 {
+    font-weight: 600;
+    text-align: center;
+    background-color: #fe9a99;
+    color: mistyrose;
+    padding: 10px 0px;
+    font-family: fantasy;
+  }
+  h2{
+    color: #d53f3c;
+  }  
+
+  .paragraph{
+    font-size: 20px;
+    font-family: fantasy;
+    margin-left: 15px;
+  }
+
+  
+
+  .sec1{
+  
+    padding-bottom: 130px;
+    
+  }
+  .sec2{
+    padding-bottom:155px ;
+  }
+  .sec3{
+    padding-bottom:135px ;
+  }
+
+  span{
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .td{
+    font-weight: 600;
+    text-align: center;
+    background-color: #fe9a99;
+    color: mistyrose;
+    padding: 10px 0px;
+    font-family: fantasy;
+    box-shadow: 7px 5px 5px rgb(52, 49, 49);
+  }
+  
+  .sec1:hover{
+    background-color: (#f5f5f5);
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .sec2:hover{
+    background-color: (#f5f5f5);
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .sec3:hover{
+    background-color: (#f5f5f5);
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .sec4:hover{
+    background-color: (#f5f5f5);
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #bg_video {
+    
+    position: absolute;
+    right: 0;
+    bottom:0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  } 
+
+  .main {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+
+  

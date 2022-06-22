@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Cases', 'Recovery', 'Death'],
+          ['March,21',  11846096, 11262508, 160983],
+          ['April,21',  11957197, 15673250, 211839],
+          ['May,21',  28173835, 25939715, 331910],
+          
+        ]);
+
+        var options = {
+          vAxis: {title: 'Cases'},
+          hAxis: {title: 'Month'},
+          seriesType: 'bars',
+          series: {3: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <link rel="stylesheet" href="records.css">
+  </head>
+  <body style="background-color: rgb(235, 232, 229);">
+
+    <h1>
+        Stats of COVID-19(2nd Wave)</h1>
+  <hr/>
+    
+    <table>
+        <tr id="header">
+            <th>State</th>
+            <th>Months</th>
+            <th style="color: blue;">Confirmed<br>Cases</th>
+            <th style="color: green;"> Recovery <br>Rate</th>
+            <th style="color:red;">Deaths</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Maharastra</th>
+            <td>March</td>
+            <td>73932868</td>
+            <td>67092019</td>
+            <td>1644758</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>109268647</td>
+            <td>90005388</td>
+            <td>1796730</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>163600234</td>
+            <td>146040026</td>
+            <td>2519543</td>
+        </tr>
+
+        <tr>
+            <th rowspan="3">Karnataka</th>
+            <td>March</td>
+            <td>29922449</td>
+            <td>29176654</td>
+            <td></t>384739</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>34620427</td>
+            <td>30283450</td>
+            <td>402038</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>65888218</td>
+            <td>49794217</td>
+            <td>672003</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Kerala</th>
+            <td>March</td>
+            <td>33857290</td>
+            <td>32714158</td>
+            <td>136624</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>37352716</td>
+            <td>34179765</td>
+            <td>146398</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>64601734</td>
+            <td>53727191</td>
+            <td>203398</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Tamil<br>Nadu</th>
+            <td>March</td>
+            <td>26757276</td>
+            <td>26156231</td>
+            <td>389689</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>29432909</td>
+            <td>27239572</td>
+            <td>393383</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>49183698</td>
+            <td>42039892</td>
+            <td>555786</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Andhra<br>Pradesh</th>
+            <td>March</td>
+            <td>27685142</td>
+            <td>27395710</td>
+            <td>222749</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>28812262</td>
+            <td>27304503</td>
+            <td>146398</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>43664130</td>
+            <td>37567050</td>
+            <td>289328</td>
+        </tr>
+        
+        
+
+
+
+    </table>
+    
+
+
+    <div id="chart_div"></div>
+
+    <a href="home.html"><button id="home_btn">HOME</button></a>
+  </body>
+</html>
